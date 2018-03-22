@@ -1,0 +1,58 @@
+server:
+  port: 8081 #服务器端口
+
+spring:
+  application:
+    name: "demo-service"
+  main:
+    banner-mode: "off"  #启动时是否在控制台/日志里输出Spring字样Banner
+  thymeleaf:
+    cache: false
+  profiles:
+    active: dev
+  # 单数据源配置
+  datasource:
+    # url: jdbc:mysql://39.106.45.190:3306/winpos   // root // liuqi999!
+    url: jdbc:mysql://localhost:3306/zbw #jdbc:mysql://10.0.19.5:30291/winpos?useUnicode=true&characterEncoding=utf8&zeroDateTimeBehavior=convertToNull&tinyInt1isBit=false&allowMultiQueries=true&useLocalSessionState=true&autoReconnect=true&failOverReadOnly=false&noAccessToProcedureBodies=true&useTimezone=true&serverTimezone=Hongkong
+    username: root #devuser2
+    password: zbw #LC2q@dM=T5!pmoAwf5k
+    driver-class-name: com.mysql.jdbc.Driver
+#    testOnBorrow: true
+#    initSize: 5
+#    minIdle: 1
+#    maxActive: 20
+  redis:
+    database: 0
+    host: 127.0.0.1
+    port: 6379
+    password:
+    pool:
+      max-active: 8
+      max-wait: -1
+      max-idle: 8
+      min-idle: 0
+    timeout: 0
+## 多数据源配置
+## master 数据源配置 todo
+#master:
+#  datasource:
+#    url: jdbc:mysql://localhost:3306/springbootdb?useUnicode=true&characterEncoding=utf8
+#    username: root
+#    password: 123456
+#    driverClassName: com.mysql.jdbc.Driver
+#
+### cluster 数据源配置
+#cluster:
+#  datasource:
+#    url: jdbc:mysql://localhost:3306/springbootdb_cluster?useUnicode=true&characterEncoding=utf8
+#    username: root
+#    password: 123456
+#    driverClassName: com.mysql.jdbc.Driver
+
+
+
+mybatis:
+  mapperLocations: classpath:mapper/*.xml
+
+
+

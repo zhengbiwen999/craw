@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd" >
+<mapper namespace="com.springboot.dao.AreaDao">
+	<resultMap id="BaseResultMap" type="com.springboot.domain.AreaEntity">
+		<id column="fiCityId" jdbcType="INTEGER" property="cityId" />
+		<id column="fiDistrictId" jdbcType="INTEGER" property="districtId" />
+		<result column="fsDistrictName" jdbcType="VARCHAR" property="districtName" />
+		<result column="fsAreaSort" jdbcType="VARCHAR" property="areaSort" />
+	</resultMap>
+
+	<sql id="Base_Column_List">
+		fiCityId, fiAreaId, fsAreaName, fsAreaSort
+	</sql>
+
+	<select id="getAllArea" resultMap="BaseResultMap">
+		select * from tbarea;
+	</select>
+
+	<insert id="bashInsert" useGeneratedKeys="false">
+		replace into student
+		values
+		<foreach item="item" collection="list" separator=",">
+			(#{item.stuid},#{item.stunm})
+		</foreach>
+	</insert>
+
+</mapper>

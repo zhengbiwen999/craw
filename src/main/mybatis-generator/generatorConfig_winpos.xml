@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE generatorConfiguration
+        PUBLIC "-//mybatis.org//DTD MyBatis Generator Configuration 1.0//EN"
+        "http://mybatis.org/dtd/mybatis-generator-config_1_0.dtd">
+<generatorConfiguration>
+
+    <context id="Mysql" targetRuntime="MyBatis3" defaultModelType="flat">
+
+        <property name="javaFileEncoding" value="UTF-8"/>
+        <property name="beginningDelimiter" value="`"/>
+        <property name="endingDelimiter" value="`"/>
+
+        <jdbcConnection driverClass="com.mysql.jdbc.Driver"
+                        connectionURL="jdbc:mysql://10.0.19.6:30291/winpos?useUnicode=true&amp;characterEncoding=utf8&amp;zeroDateTimeBehavior=convertToNull&amp;tinyInt1isBit=false&amp;allowMultiQueries=true&amp;useLocalSessionState=true&amp;autoReconnect=true&amp;failOverReadOnly=false"
+                        userId="devuser2"
+                        password="LC2q@dM=T5!pmoAwf5k">
+        </jdbcConnection>
+
+        <javaModelGenerator targetPackage="test.mpos.api.shop.model"
+                            targetProject="../test/java/"/>
+
+        <sqlMapGenerator targetPackage="mybatis/alfred"
+                         targetProject="../test/resources/"/>
+
+        <javaClientGenerator targetPackage="test.mpos.api.shop.mapper"
+                             targetProject="../test/java/"
+                             type="XMLMAPPER"/>
+
+        <!--<table tableName="t_shop_product_info" domainObjectName="ShopProductInfo"-->
+               <!--enableCountByExample="false"-->
+               <!--enableUpdateByExample="false"-->
+               <!--enableDeleteByExample="false"-->
+               <!--enableSelectByExample="false"-->
+               <!--selectByExampleQueryId="false">-->
+            <!--<property name="useActualColumnNames" value="false"/>-->
+            <!--&lt;!&ndash;<generatedKey column="f_shop_id" sqlStatement="MYSQL" identity="true"/>&ndash;&gt;-->
+            <!--<columnRenamingRule searchString="^[f|F]_" replaceString=""/>-->
+        <!--</table>-->
+
+        <table tableName="tbseqno" domainObjectName="SeqNo"
+               enableCountByExample="false"
+               enableUpdateByExample="false"
+               enableDeleteByExample="false"
+               enableSelectByExample="false"
+               selectByExampleQueryId="false">
+            <property name="useActualColumnNames" value="true"/>
+            <!--<generatedKey column="f_shop_id" sqlStatement="MYSQL" identity="true"/>-->
+            <columnRenamingRule searchString="^[f|F]_" replaceString=""/>
+        </table>
+
+    </context>
+</generatorConfiguration>
