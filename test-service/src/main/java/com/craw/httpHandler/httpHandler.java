@@ -53,8 +53,11 @@ public class httpHandler {
         List<Student> insertList = new ArrayList<>();
 
 
-        for (int i = 1; i <= 160; i++) {
+        for (int i = 1; i <= 360; i++) {
             String s = HttpUtil.get("http://avlang18.com/thread-htm-fid-115-page-" + i + ".html", "gbk");
+            //String s = HttpUtil.get("http://avlang18.com/thread-htm-fid-4-page-" + i + ".html", "gbk");
+
+
 //        Document doc = Jsoup.parse(s);
             String regex = "<a.*?/a>";
             //String regex = "<a.*>(.*)</a>";
