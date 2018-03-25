@@ -1,0 +1,63 @@
+server:
+  port: 8010
+
+spring:
+  application:
+    name: "craw-zuul"
+
+info:
+  config:
+    version: 20180325A
+
+eureka:
+  client:
+    service-url:
+      defaultZone: http://localhost:8001/eureka/
+
+zuul:
+  ignored-services: '*'
+  retryable: false
+  routes:
+    api-demo:
+      path: /demo/**
+      service-id: "test-service"
+#      sensitive-headers:
+#    api-shop:
+#      path: /shop/**
+#      service-id: "winpos-shop-service"
+#      sensitive-headers:
+#    api-system:
+#      path: /base/**
+#      service-id: "winpos-base-service"
+#      sensitive-headers:
+#    api-dishes:
+#      path: /dishes/**
+#      service-id: "winpos-dishes-service"
+#      sensitive-headers:
+#    api-config:
+#      path: /config/**
+#      service-id: "winpos-config-server"
+#      sensitive-headers:
+#    api-report:
+#          path: /report/**
+#          service-id: "winpos-report-service"
+#          sensitiveHeaders: Access-Control-Allow-Origin,Access-Control-Allow-Methods
+
+#management:
+#  security:
+#    enabled: false
+#  health:
+#    redis:
+#      enabled: true
+#    mail:
+#      enabled: false
+#    db:
+#      enabled: false
+#    diskspace:
+#      enabled: false
+
+#endpoints:
+#  shutdown:
+#    enabled: true
+#  restart:
+#    enabled: true

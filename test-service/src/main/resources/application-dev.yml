@@ -2,4 +2,4 @@
 home:
   province: ZheJiang
   city: WenLing
-  desc: I'm living in ${home.province} ${home.city}.
+  desc: I'm living in ${home.province} ${home.city}

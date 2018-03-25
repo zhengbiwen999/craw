@@ -5,7 +5,10 @@ import com.craw.model.Student;
 import com.springboot.domain.AreaEntity;
 import com.springboot.service.AreaService;
 import com.springboot.utils.http.HttpUtil;
+import org.apache.log4j.Logger;
 import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.cloud.client.ServiceInstance;
+import org.springframework.cloud.client.discovery.DiscoveryClient;
 import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RestController;
 
@@ -17,11 +20,18 @@ import java.util.regex.Pattern;
 @RestController
 public class AreaController {
 
+    private final Logger logger = Logger.getLogger(AreaController.class);
+
     @Autowired
     private AreaService areaService;
 
+    @Autowired
+    private DiscoveryClient client;
+
     @RequestMapping("/")
     public String ping(){
+        ServiceInstance localServiceInstance = client.getLocalServiceInstance();
+        logger.info(localServiceInstance.getHost()+" : "+localServiceInstance.getPort());
         return "OK";
     }
 

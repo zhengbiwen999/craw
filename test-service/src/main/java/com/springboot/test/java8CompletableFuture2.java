@@ -2,8 +2,7 @@ package com.springboot.test;
 
 import org.junit.Test;
 
-import java.util.concurrent.*;
-import java.util.function.Function;
+import java.util.concurrent.CompletableFuture;
 
 public class java8CompletableFuture2 {
 
