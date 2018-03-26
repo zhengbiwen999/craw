@@ -8,8 +8,8 @@ spring:
       server:
         git:
           uri: https://github.com/zhengbiwen999/demoConfig.git
-          username:
-          password:
+#          username:
+#          password:
 
 #info:
 #  app:
@@ -18,10 +18,10 @@ spring:
 #    env: ${spring.profiles.active}
 #    version: 20180117A
 #
-#eureka:
-#  instance:
-#    prefer-ip-address: true
-#    instance-id: ${spring.cloud.client.ipAddress}:${server.port}
+eureka:
+  client:
+    service-url:
+      defaultZone: http://localhost:6001/eureka/
 #
 #security:
 #  basic:
