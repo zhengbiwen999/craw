@@ -14,6 +14,6 @@ public class BaseConfig {
     //超时时间
     private int timeout;
 
-    private String keyWords ="大屌,黑人,巨根,老外,洋人,留学，外教，外贸";
+    private String keyWords ="";
 
 }
