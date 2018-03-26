@@ -6,17 +6,25 @@
         <sourceOutputDir name="target/generated-sources/annotations" />
         <sourceTestOutputDir name="target/generated-test-sources/test-annotations" />
         <outputRelativeToContentRoot value="true" />
+        <module name="config-server" />
+        <module name="configserver" />
         <module name="craw" />
         <module name="craw-erueka" />
         <module name="craw-zuul" />
+        <module name="erueka-server" />
         <module name="test-service" />
+        <module name="zuul-server" />
       </profile>
     </annotationProcessing>
     <bytecodeTargetLevel>
+      <module name="config-server" target="1.8" />
+      <module name="configserver" target="1.5" />
       <module name="craw" target="1.8" />
       <module name="craw-erueka" target="1.8" />
       <module name="craw-zuul" target="1.8" />
+      <module name="erueka-server" target="1.8" />
       <module name="test-service" target="1.8" />
+      <module name="zuul-server" target="1.8" />
     </bytecodeTargetLevel>
   </component>
 </project>

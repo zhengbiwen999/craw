@@ -1,5 +1,5 @@
 server:
-  port: 8010
+  port: ${zuul.app.port}
 
 spring:
   application:
@@ -11,10 +11,10 @@ info:
     address: localhost:8010
     env: dev
     version: 20180117A
-eureka:
-  client:
-    service-url:
-      defaultZone: http://localhost:6001/eureka/
+#eureka:
+#  client:
+#    service-url:
+#      defaultZone: http://localhost:6001/eureka/
 
 zuul:
   ignored-services: '*'

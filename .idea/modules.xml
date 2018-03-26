@@ -2,10 +2,11 @@
 <project version="4">
   <component name="ProjectModuleManager">
     <modules>
+      <module fileurl="file://$PROJECT_DIR$/config-server/config-server.iml" filepath="$PROJECT_DIR$/config-server/config-server.iml" />
       <module fileurl="file://$PROJECT_DIR$/craw.iml" filepath="$PROJECT_DIR$/craw.iml" />
-      <module fileurl="file://$PROJECT_DIR$/craw-erueka/craw-erueka.iml" filepath="$PROJECT_DIR$/craw-erueka/craw-erueka.iml" />
-      <module fileurl="file://$PROJECT_DIR$/craw-zuul/craw-zuul.iml" filepath="$PROJECT_DIR$/craw-zuul/craw-zuul.iml" />
+      <module fileurl="file://$PROJECT_DIR$/erueka-server/erueka-server.iml" filepath="$PROJECT_DIR$/erueka-server/erueka-server.iml" />
       <module fileurl="file://$PROJECT_DIR$/test-service/test-service.iml" filepath="$PROJECT_DIR$/test-service/test-service.iml" />
+      <module fileurl="file://$PROJECT_DIR$/zuul-server/zuul-server.iml" filepath="$PROJECT_DIR$/zuul-server/zuul-server.iml" />
     </modules>
   </component>
 </project>
