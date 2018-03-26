@@ -6,13 +6,15 @@ spring:
     name: "craw-zuul"
 
 info:
-  config:
-    version: 20180325A
-
+  app:
+    name: zuul-server
+    address: localhost:8010
+    env: dev
+    version: 20180117A
 eureka:
   client:
     service-url:
-      defaultZone: http://localhost:8001/eureka/
+      defaultZone: http://localhost:6001/eureka/
 
 zuul:
   ignored-services: '*'

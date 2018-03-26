@@ -8,6 +8,12 @@
     <artifactId>craw</artifactId>
     <version>1.0-SNAPSHOT</version>
 
+    <modules>
+        <module>craw-erueka</module>
+        <module>craw-zuul</module>
+        <module>test-service</module>
+    </modules>
+
     <parent>
         <groupId>org.springframework.boot</groupId>
         <artifactId>spring-boot-starter-parent</artifactId>

@@ -22,11 +22,10 @@
     </properties>
 
     <dependencies>
-
         <!-- https://mvnrepository.com/artifact/org.springframework.cloud/spring-cloud-starter-eureka-server -->
         <dependency>
             <groupId>org.springframework.cloud</groupId>
-            <artifactId>spring-cloud-starter-eureka-server</artifactId>
+            <artifactId>spring-cloud-starter-eureka</artifactId>
             <version>1.4.1.RELEASE</version>
         </dependency>
 
@@ -36,16 +35,6 @@
             <artifactId>spring-cloud-starter-zuul</artifactId>
             <version>1.4.2.RELEASE</version>
         </dependency>
-
-
-        <!-- https://mvnrepository.com/artifact/com.netflix.hystrix/hystrix-javanica -->
-        <dependency>
-            <groupId>com.netflix.hystrix</groupId>
-            <artifactId>hystrix-javanica</artifactId>
-            <version>1.5.12</version>
-        </dependency>
-
-
     </dependencies>
 
     <dependencyManagement>
