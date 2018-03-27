@@ -14,11 +14,34 @@ info:
     env: dev
     version: 20180117A
 
+security:
+  basic:
+    enabled: true
+  user:
+    name: zbw
+    password: 123456
+
+management:
+  context-path: /test   #查看 info health 加上 /test 路径，为了安全
+endpoints:              # 为了安全，改变 info  和 health 路径
+  info:
+    path: /appInfo
+  health:
+    path: /appHealth
+
 eureka:
   instance:
     prefer-ip-address: true
     hostname: localhost
-    #instance-id: ${spring.cloud.client.ipAddress}:${server.port}
+    lease-expiration-duration-in-seconds: 90 # 服务失效的时间，默认90喵，会被剔除
+    lease-renewal-interval-in-seconds: 30
+    health-check-url-path: ${management.context-path}/appHealth
+    status-page-url-path: ${management.context-path}/appInfo
   client:
+    healthcheck:
+      enabled: true
     register-with-eureka: false  #不向注册中心注册自己
     fetch-registry: false #不需要检索服务（erueka自己的）
+    registry-fetch-interval-seconds: 30 # 每隔30喵(默认) 更新缓存清单的更新时间
+  server:
+    enable-self-preservation: false # 关闭自我保护机制
