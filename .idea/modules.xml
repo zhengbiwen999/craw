@@ -2,6 +2,7 @@
 <project version="4">
   <component name="ProjectModuleManager">
     <modules>
+      <module fileurl="file://$PROJECT_DIR$/common-utils/common-utils.iml" filepath="$PROJECT_DIR$/common-utils/common-utils.iml" />
       <module fileurl="file://$PROJECT_DIR$/config-server/config-server.iml" filepath="$PROJECT_DIR$/config-server/config-server.iml" />
       <module fileurl="file://$PROJECT_DIR$/craw.iml" filepath="$PROJECT_DIR$/craw.iml" />
       <module fileurl="file://$PROJECT_DIR$/erueka-server/erueka-server.iml" filepath="$PROJECT_DIR$/erueka-server/erueka-server.iml" />

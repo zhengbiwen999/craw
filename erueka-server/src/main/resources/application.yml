@@ -45,3 +45,6 @@ eureka:
     registry-fetch-interval-seconds: 30 # 每隔30喵(默认) 更新缓存清单的更新时间
   server:
     enable-self-preservation: false # 关闭自我保护机制
+
+
+# http://localhost:6001/test/metrics
