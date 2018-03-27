@@ -3,7 +3,6 @@ package com.craw.httpHandler;
 import com.craw.config.BaseConfig;
 import com.craw.model.Student;
 import com.springboot.dao.AreaDao;
-import com.springboot.utils.http.HttpUtil;
 import org.junit.Test;
 import org.springframework.beans.factory.annotation.Autowired;
 
@@ -24,7 +23,7 @@ public class httpHandler {
 
     public static void main(String[] args) {
 
-        String s = HttpUtil.get("http://avlang18.com/thread-htm-fid-115-page-" + 1 + ".html", "gbk");
+//        String s = HttpUtil.get("http://avlang18.com/thread-htm-fid-115-page-" + 1 + ".html", "gbk");
 
 //        Document doc = Jsoup.parse(s);
 
@@ -54,9 +53,9 @@ public class httpHandler {
 
 
         for (int i = 1; i <= 360; i++) {
-            String s = HttpUtil.get("http://avlang18.com/thread-htm-fid-115-page-" + i + ".html", "gbk");
+//            String s = HttpUtil.get("http://avlang18.com/thread-htm-fid-115-page-" + i + ".html", "gbk");
             //String s = HttpUtil.get("http://avlang18.com/thread-htm-fid-4-page-" + i + ".html", "gbk");
-
+            String s = null;
 
 //        Document doc = Jsoup.parse(s);
             String regex = "<a.*?/a>";

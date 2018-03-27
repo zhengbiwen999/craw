@@ -4,11 +4,14 @@ import com.netflix.hystrix.exception.HystrixTimeoutException;
 import org.springframework.cloud.netflix.zuul.filters.route.FallbackProvider;
 import org.springframework.http.HttpHeaders;
 import org.springframework.http.HttpStatus;
+import org.springframework.http.MediaType;
 import org.springframework.http.client.ClientHttpResponse;
 import org.springframework.stereotype.Component;
 
+import java.io.ByteArrayInputStream;
 import java.io.IOException;
 import java.io.InputStream;
+import java.nio.charset.Charset;
 
 @Component
 public class AbstractZuulBackProvider implements FallbackProvider {
@@ -17,6 +20,7 @@ public class AbstractZuulBackProvider implements FallbackProvider {
     // https://www.cnblogs.com/yjmyzz/p/8093462.html
     //http://dockone.io/article/482
     // http://blog.springcloud.cn/sc/sc-lx/
+
 
     @Override
     public ClientHttpResponse fallbackResponse(Throwable cause) {
@@ -39,12 +43,15 @@ public class AbstractZuulBackProvider implements FallbackProvider {
 
             @Override
             public HttpHeaders getHeaders() {
-                return null;
+                HttpHeaders headers = new HttpHeaders();
+                MediaType mt = new MediaType("application", "json", Charset.forName("UTF-8"));
+                headers.setContentType(mt);
+                return headers;
             }
 
             @Override
             public InputStream getBody() throws IOException {
-                return null;
+                return new ByteArrayInputStream((getRoute() + " is unavailable").getBytes());
             }
 
             @Override
@@ -64,7 +71,7 @@ public class AbstractZuulBackProvider implements FallbackProvider {
 
             @Override
             public void close() {
-
+//                logger.debug("close => threadId:" + Thread.currentThread().getId());
             }
         };
     }

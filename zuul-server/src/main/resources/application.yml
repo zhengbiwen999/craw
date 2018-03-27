@@ -24,7 +24,8 @@ zuul:
   routes:
     api-demo:
       path: /demo/**
-      service-id: "test-service"
+      service-id: "demo-service"
+  add-host-header: true # 解决重定向问题
 #      sensitive-headers:
 #    api-shop:
 #      path: /shop/**
@@ -65,3 +66,9 @@ zuul:
 #    enabled: true
 #  restart:
 #    enabled: true
+
+
+# 1、路由问题： 默认规则，自定义映射规则，路径匹配，路由前缀
+# 2、本地跳转，forward
+# 3、cookie和头信息：设置routes下的sensitiveHeaders，使cookie和头信息能向下游传递
+# 4、重定向：设置 addHostHeader : true

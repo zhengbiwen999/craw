@@ -2,13 +2,11 @@ package com.springboot.controller;
 
 import com.craw.config.BaseConfig;
 import com.craw.model.Student;
+import com.netflix.discovery.DiscoveryClient;
 import com.springboot.domain.AreaEntity;
 import com.springboot.service.AreaService;
-import com.springboot.utils.http.HttpUtil;
 import org.apache.log4j.Logger;
 import org.springframework.beans.factory.annotation.Autowired;
-import org.springframework.cloud.client.ServiceInstance;
-import org.springframework.cloud.client.discovery.DiscoveryClient;
 import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RestController;
 
@@ -30,8 +28,8 @@ public class AreaController {
 
     @RequestMapping("/")
     public String ping(){
-        ServiceInstance localServiceInstance = client.getLocalServiceInstance();
-        logger.info(localServiceInstance.getHost()+" : "+localServiceInstance.getPort());
+//        ServiceInstance localServiceInstance = client.getLocalServiceInstance();
+//        logger.info(localServiceInstance.getHost()+" : "+localServiceInstance.getPort());
         return "OK";
     }
 
@@ -46,8 +44,9 @@ public class AreaController {
         List<Student> insertList = new ArrayList<>();
 
         for (int i = 1; i <= 10; i++) {
-            String s = HttpUtil.get("http://avlang18.com/thread-htm-fid-115-page-" + i + ".html", "gbk");
-//        Document doc = Jsoup.parse(s);
+//            String s = HttpUtil.get("http://avlang18.com/thread-htm-fid-115-page-" + i + ".html", "gbk");
+String s = null;
+// Document doc = Jsoup.parse(s);
             String regex = "<a.*?/a>";
             //String regex = "<a.*>(.*)</a>";
             Pattern pt = Pattern.compile(regex);
