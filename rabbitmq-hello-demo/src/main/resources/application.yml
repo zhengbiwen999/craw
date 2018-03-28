@@ -1,0 +1,18 @@
+server:
+  port: 8083
+spring:
+  application:
+    name: rabbitmq-hello-demo
+  profiles:
+    active: dev
+  rabbitmq:
+    host: 127.0.0.1
+    port: 5672
+    username: guest
+    password: guest
+
+eureka:
+  client:
+    service-url:
+      defaultZone: http://zbw:123456@localhost:6001/eureka/
+

@@ -1,9 +1,11 @@
 server:
-  port: 8101
+  port: 8010
 
 spring:
   application:
-    name: "craw-zuul"
+    name: "zuul-server"
+  cloud:
+    config:
 
 info:
   app:
@@ -26,31 +28,14 @@ zuul:
       path: /demo/**
       service-id: "demo-service"
   add-host-header: true # 解决重定向问题
-#      sensitive-headers:
-#    api-shop:
-#      path: /shop/**
-#      service-id: "winpos-shop-service"
-#      sensitive-headers:
-#    api-system:
-#      path: /base/**
-#      service-id: "winpos-base-service"
-#      sensitive-headers:
-#    api-dishes:
-#      path: /dishes/**
-#      service-id: "winpos-dishes-service"
-#      sensitive-headers:
-#    api-config:
-#      path: /config/**
-#      service-id: "winpos-config-server"
-#      sensitive-headers:
 #    api-report:
 #          path: /report/**
 #          service-id: "winpos-report-service"
 #          sensitiveHeaders: Access-Control-Allow-Origin,Access-Control-Allow-Methods
 
-#management:
-#  security:
-#    enabled: false
+management:
+  security:
+    enabled: false   # 配置false,否则会有 401 错误
 #  health:
 #    redis:
 #      enabled: true
