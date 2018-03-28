@@ -16,3 +16,10 @@ eureka:
     service-url:
       defaultZone: http://zbw:123456@localhost:6001/eureka/
 
+
+# mac
+# brew update
+# brew install erlang
+# brew install rabbitmq
+# brew services start rabbitmq 启动
+# localhost:15672 / guest guest
