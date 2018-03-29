@@ -8,9 +8,11 @@ spring:
       server:
         git:
           uri: https://github.com/zhengbiwen999/demoConfig.git
-#          username:
-#          password:
+          username:
+          password:
 
+server:
+  port: 6002
 #info:
 #  app:
 #    name: ${spring.application.name}
@@ -21,7 +23,7 @@ spring:
 eureka:
   client:
     service-url:
-      defaultZone: http://localhost:6001/eureka/
+      defaultZone: http://zbw:123456@localhost:6001/eureka/
 #
 #security:
 #  basic:
