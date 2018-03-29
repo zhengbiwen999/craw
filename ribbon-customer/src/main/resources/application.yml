@@ -1,0 +1,7 @@
+server:
+  port: 9000
+
+eureka:
+  client:
+    service-url:
+      defaultZone: http://zbw:123456@localhost:6001/eureka/

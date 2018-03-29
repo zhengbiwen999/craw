@@ -15,6 +15,7 @@
         <module name="demo-service" />
         <module name="erueka-server" />
         <module name="rabbitmq-hello-demo" />
+        <module name="ribbon-customer" />
         <module name="test-service" />
         <module name="zuul-server" />
       </profile>
@@ -29,6 +30,7 @@
       <module name="demo-service" target="1.8" />
       <module name="erueka-server" target="1.8" />
       <module name="rabbitmq-hello-demo" target="1.8" />
+      <module name="ribbon-customer" target="1.8" />
       <module name="test-service" target="1.8" />
       <module name="zuul-server" target="1.8" />
     </bytecodeTargetLevel>

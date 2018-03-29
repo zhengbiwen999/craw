@@ -8,6 +8,7 @@
         <option value="$PROJECT_DIR$/common-utils/pom.xml" />
         <option value="$PROJECT_DIR$/demo-service/pom.xml" />
         <option value="$PROJECT_DIR$/rabbitmq-hello-demo/pom.xml" />
+        <option value="$PROJECT_DIR$/ribbon-customer/pom.xml" />
       </list>
     </option>
   </component>
