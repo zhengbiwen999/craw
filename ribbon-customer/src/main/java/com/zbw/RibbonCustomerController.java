@@ -9,11 +9,11 @@ import org.springframework.web.client.RestTemplate;
 public class RibbonCustomerController {
 
     @Autowired
-    RestTemplate restTemplate;
+    HelloService helloService;
 
     @RequestMapping(value = "/ribbon-customer")
     public String helloCustomer(){
-        return restTemplate.getForEntity("http://demo-service/hello",String.class).getBody();
+        return helloService.helloService();
     }
 }
 

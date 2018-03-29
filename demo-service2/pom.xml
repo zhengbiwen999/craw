@@ -4,8 +4,8 @@
          xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
     <modelVersion>4.0.0</modelVersion>
 
-    <groupId>ribbon-customer</groupId>
-    <artifactId>ribbon-customer</artifactId>
+    <groupId>demo-service</groupId>
+    <artifactId>demo-service2</artifactId>
     <version>1.0-SNAPSHOT</version>
 
     <parent>
@@ -23,12 +23,6 @@
     <dependencies>
         <dependency>
             <groupId>org.springframework.cloud</groupId>
-            <artifactId>spring-cloud-starter-ribbon</artifactId>
-            <version>1.4.3.RELEASE</version>
-        </dependency>
-
-        <dependency>
-            <groupId>org.springframework.cloud</groupId>
             <artifactId>spring-cloud-starter-eureka</artifactId>
             <version>1.4.1.RELEASE</version>
         </dependency>
@@ -36,13 +30,7 @@
         <dependency>
             <groupId>org.springframework.boot</groupId>
             <artifactId>spring-boot-starter-web</artifactId>
-            <version>1.5.1.RELEASE</version>
-        </dependency>
-
-        <dependency>
-            <groupId>org.springframework.cloud</groupId>
-            <artifactId>spring-cloud-starter-hystrix</artifactId>
-            <version>1.4.1.RELEASE</version>
+            <version>1.5.9.RELEASE</version>
         </dependency>
 
     </dependencies>
@@ -59,4 +47,5 @@
             </dependency>
         </dependencies>
     </dependencyManagement>
+
 </project>

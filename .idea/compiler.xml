@@ -1,11 +1,27 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="CompilerConfiguration">
+    <resourceExtensions />
+    <wildcardResourcePatterns>
+      <entry name="!?*.java" />
+      <entry name="!?*.form" />
+      <entry name="!?*.class" />
+      <entry name="!?*.groovy" />
+      <entry name="!?*.scala" />
+      <entry name="!?*.flex" />
+      <entry name="!?*.kt" />
+      <entry name="!?*.clj" />
+      <entry name="!?*.aj" />
+    </wildcardResourcePatterns>
     <annotationProcessing>
-      <profile name="Maven default annotation processors profile" enabled="true">
+      <profile default="true" name="Default" enabled="false">
+        <processorPath useClasspath="true" />
+      </profile>
+      <profile default="false" name="Maven default annotation processors profile" enabled="true">
         <sourceOutputDir name="target/generated-sources/annotations" />
         <sourceTestOutputDir name="target/generated-test-sources/test-annotations" />
         <outputRelativeToContentRoot value="true" />
+        <processorPath useClasspath="true" />
         <module name="common-utils" />
         <module name="config-server" />
         <module name="configserver" />
@@ -13,6 +29,7 @@
         <module name="craw-erueka" />
         <module name="craw-zuul" />
         <module name="demo-service" />
+        <module name="demo-service2" />
         <module name="erueka-server" />
         <module name="rabbitmq-hello-demo" />
         <module name="ribbon-customer" />
@@ -28,6 +45,7 @@
       <module name="craw-erueka" target="1.8" />
       <module name="craw-zuul" target="1.8" />
       <module name="demo-service" target="1.8" />
+      <module name="demo-service2" target="1.8" />
       <module name="erueka-server" target="1.8" />
       <module name="rabbitmq-hello-demo" target="1.8" />
       <module name="ribbon-customer" target="1.8" />
