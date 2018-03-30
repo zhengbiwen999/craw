@@ -5,6 +5,10 @@ spring:
     name: demo-service
   profiles:
     active: dev
+  cloud:
+    loadbalancer:
+      retry:
+        enabled: true  # 开启重试机制
 
 eureka:
   client:
