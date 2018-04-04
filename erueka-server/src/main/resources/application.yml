@@ -10,7 +10,7 @@ server:
 info:
   app:
     name: eureka-server
-    address: localhost:8001
+    address: localhost:6001
     env: dev
     version: 20180117A
 
