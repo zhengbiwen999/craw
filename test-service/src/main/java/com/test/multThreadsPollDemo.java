@@ -4,15 +4,10 @@ import org.apache.commons.collections4.ListUtils;
 import org.junit.Test;
 
 import java.time.Clock;
-import java.time.Duration;
-import java.time.Instant;
 import java.util.ArrayList;
-import java.util.Date;
 import java.util.List;
 import java.util.Random;
-import java.util.concurrent.ExecutorService;
-import java.util.concurrent.Executors;
-import java.util.concurrent.Future;
+import java.util.concurrent.*;
 import java.util.stream.Collectors;
 import java.util.stream.IntStream;
 
@@ -69,6 +64,33 @@ public class multThreadsPollDemo {
         System.out.println("最终结果："+sum+" 计算间隔："+(end-begin)+"毫秒");
     }
 
+    @Test
+    public void test() throws ExecutionException, InterruptedException {
+        Clock clock = Clock.systemDefaultZone();
+        long begin = clock.millis();
 
+        Random random = new Random();
+        IntStream intStream = random.ints(0, 100);
+        //生成需要计算的大集合
+        List<Integer> taskList = intStream.limit(10000).boxed().collect(Collectors.toList());
+
+        Future<Integer> submit = es.submit(new Callable<Integer>() {
+            @Override
+            public Integer call() throws Exception {
+                int sum = getListSum(taskList);
+                return sum;
+            }
+        });
+        Integer sum = 0;
+        boolean flag = true;
+        while (flag) {
+            if (submit.isDone()){
+                sum = submit.get();
+                flag = false;
+            }
+        }
+        long end = clock.millis();
+        System.out.println("结果是："+sum+" 计算间隔："+(end-begin));
+    }
 
 }
