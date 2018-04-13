@@ -12,8 +12,9 @@
         <option value="$PROJECT_DIR$/demo-service/pom.xml" />
         <option value="$PROJECT_DIR$/rabbitmq-hello-demo/pom.xml" />
         <option value="$PROJECT_DIR$/ribbon-customer/pom.xml" />
+        <option value="$PROJECT_DIR$/netty4-demo/pom.xml" />
       </list>
     </option>
   </component>
-  <component name="ProjectRootManager" version="2" languageLevel="JDK_1_3" assert-keyword="false" jdk-15="false" project-jdk-name="1.8" project-jdk-type="JavaSDK" />
+  <component name="ProjectRootManager" version="2" languageLevel="JDK_1_3" project-jdk-name="1.8" project-jdk-type="JavaSDK" />
 </project>
