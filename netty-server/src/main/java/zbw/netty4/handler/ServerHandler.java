@@ -1,7 +1,12 @@
 package zbw.netty4.handler;
 
+import io.netty.buffer.ByteBuf;
 import io.netty.channel.ChannelHandlerContext;
 import io.netty.channel.SimpleChannelInboundHandler;
+import org.springframework.util.StringUtils;
+
+import java.nio.charset.Charset;
+import java.util.Arrays;
 
 public class ServerHandler extends SimpleChannelInboundHandler {
 
@@ -17,7 +22,17 @@ public class ServerHandler extends SimpleChannelInboundHandler {
 
     @Override
     protected void channelRead0(ChannelHandlerContext ctx, Object msg) throws Exception {
-        System.out.println("消息："+msg);
+        ByteBuf msg1 = (ByteBuf) msg;
+        int readerIndex = msg1.readerIndex();
+        int writerIndex = msg1.writerIndex();
+        System.out.println("read and write Index is : "+ readerIndex +" --- "+writerIndex);
+        byte b = msg1.readByte();
+        System.out.println("读取的一个字节是："+(char)b);
+        //读取一个字节后，readIndex由 0 变为 1
+        System.out.println("读取一个字节后："+msg1.readerIndex());
+        msg1.writeByte(1);
+        System.out.println("写入一个后："+msg1.writerIndex());
+        System.out.println(msg1.toString(Charset.forName("UTF-8")));
     }
 
     @Override
