@@ -3,6 +3,23 @@ server:
 spring:
   application:
     name: demo-service
+  redis:
+    database: 0
+    host: 47.98.123.156
+    password: Zbw123456|
+    port: 6379
+    pool:
+      max-active: 8
+      min-idle: 0
+      max-wait:  -1
+      max-idle: 8
+  data:
+    elasticsearch:
+      cluster-name: elasticsearch
+      cluster-nodes: 47.98.123.156:9300
+      repositories:
+        enabled: true
+
   profiles:
     active: dev
   cloud:

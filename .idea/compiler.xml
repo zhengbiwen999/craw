@@ -23,7 +23,7 @@
       </profile>
     </annotationProcessing>
     <bytecodeTargetLevel>
-      <module name="common-utils" target="1.5" />
+      <module name="common-utils" target="1.8" />
       <module name="config-server" target="1.8" />
       <module name="configserver" target="1.5" />
       <module name="craw" target="1.8" />
