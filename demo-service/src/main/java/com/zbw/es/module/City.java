@@ -5,8 +5,9 @@ import org.springframework.data.elasticsearch.annotations.Document;
 
 import java.io.Serializable;
 
+
 @Data
-@Document(indexName = "cityIndex",type = "city")
+@Document(indexName = "zbw",type = "city")
 public class City implements Serializable{
 
     private static final long serialVersionUID = 7353891786833787224L;
