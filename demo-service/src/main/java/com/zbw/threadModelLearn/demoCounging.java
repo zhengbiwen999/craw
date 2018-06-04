@@ -16,7 +16,7 @@ public class demoCounging {
         class CountingThread extends Thread{
             @Override
             public void run() {
-                for(int x=0;x<1000;++x){
+                for(int x=0;x<3000;++x){
                     counter.increment();
                 }
             }
