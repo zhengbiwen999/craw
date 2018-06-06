@@ -1,7 +1,7 @@
 package com.zbw.producAndCustomer;
 
 public class main {
-
+        //https://www.cnblogs.com/hckblogs/p/7858545.html
     public static void main(String[] args) {
         //定义一个仓库,消费者和生产者都使用这一个仓库
         Repertory repertory =new Repertory();
