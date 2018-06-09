@@ -16,6 +16,7 @@
         <module name="erueka-server" />
         <module name="netty-server" />
         <module name="netty4-demo" />
+        <module name="rabbitmq-hello" />
         <module name="rabbitmq-hello-demo" />
         <module name="ribbon-customer" />
         <module name="test-service" />
@@ -34,6 +35,7 @@
       <module name="erueka-server" target="1.8" />
       <module name="netty-server" target="1.8" />
       <module name="netty4-demo" target="1.5" />
+      <module name="rabbitmq-hello" target="1.8" />
       <module name="rabbitmq-hello-demo" target="1.8" />
       <module name="ribbon-customer" target="1.8" />
       <module name="test-service" target="1.8" />

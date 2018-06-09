@@ -8,6 +8,8 @@
 ***/
 package com.zbw.lockLearn.PhiosopherTimeout;
 
+import org.junit.Test;
+
 import java.util.concurrent.locks.ReentrantLock;
 
 public class DiningPhilosophers {
@@ -25,4 +27,5 @@ public class DiningPhilosophers {
     for (int i = 0; i < 5; ++i)
       philosophers[i].join();
   }
+
 }

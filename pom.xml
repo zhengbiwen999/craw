@@ -20,6 +20,7 @@
         <module>ribbon-customer</module>
         <module>rabbitmq-hello-demo</module>
         <module>netty-server</module>
+        <module>rabbitmq-hello</module>
     </modules>
 
     <parent>

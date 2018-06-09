@@ -3,8 +3,12 @@ server:
 spring:
   application:
     name: rabbitmq-hello-demo
-  profiles:
-    active: dev
+  cloud:
+    config:
+      enabled: true
+      profile: dev
+      discovery:
+        service-id: config-server
   rabbitmq:
     host: 127.0.0.1
     port: 5672
@@ -15,7 +19,6 @@ eureka:
   client:
     service-url:
       defaultZone: http://zbw:123456@localhost:6001/eureka/
-
 
 # mac
 # brew update

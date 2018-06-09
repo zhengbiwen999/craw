@@ -12,9 +12,13 @@ public class Sender {
     @Autowired
     private AmqpTemplate amqpTemplate;
 
+    @Autowired
+    private ValueConfig valueConfig;
+
     public void send(){
         String context = "hello "+ new Date();
         System.out.println("sender : "+ context);
+        System.out.println("配置值是： ===== >"+valueConfig.getNum1());
         this.amqpTemplate.convertAndSend("hello",context);
     }
 }
