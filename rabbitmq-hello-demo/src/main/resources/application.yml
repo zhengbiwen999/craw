@@ -2,13 +2,16 @@ server:
   port: 8083
 spring:
   application:
-    name: rabbitmq-hello-demo
+    name: mq-service
+  profiles:
+    active: dev
   cloud:
     config:
-      enabled: true
+      label: dev
+#      discovery:
+#        enabled: true
+      uri: http://localhost:6002/
       profile: dev
-      discovery:
-        service-id: config-server
   rabbitmq:
     host: 127.0.0.1
     port: 5672

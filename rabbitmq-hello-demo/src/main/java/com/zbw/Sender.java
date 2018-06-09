@@ -18,7 +18,7 @@ public class Sender {
     public void send(){
         String context = "hello "+ new Date();
         System.out.println("sender : "+ context);
-        System.out.println("配置值是： ===== >"+valueConfig.getNum1());
+        System.out.println("配置值是： ===== >"+valueConfig.getEnv());
         this.amqpTemplate.convertAndSend("hello",context);
     }
 }

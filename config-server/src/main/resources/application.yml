@@ -8,8 +8,8 @@ spring:
       server:
         git:
           uri: https://github.com/zhengbiwen999/demoConfig.git
-          username:
-          password:
+          username: zhengbiwen999
+          password: zbw910405
 
 server:
   port: 6002
