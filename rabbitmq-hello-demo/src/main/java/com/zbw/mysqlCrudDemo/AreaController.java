@@ -22,8 +22,8 @@ public class AreaController {
     @Autowired
     private AreaService areaService;
 
-    @Autowired
-    private DiscoveryClient client;
+//    @Autowired
+//    private DiscoveryClient client;
 
     @RequestMapping("/")
     public String ping(){
@@ -32,12 +32,12 @@ public class AreaController {
         return "OK";
     }
 
-    @RequestMapping("/getAll")
+    @RequestMapping("/getAllArea")
     public List<AreaEntity> getAllAreas(){
         return areaService.getAllArea();
     }
 
-    @RequestMapping("/insert")
+    @RequestMapping("/insertOne")
     public int insert(){
 
         List<Student> insertList = new ArrayList<>();
