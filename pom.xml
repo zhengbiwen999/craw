@@ -13,11 +13,9 @@
         <module>erueka-server</module>
         <module>zuul-server</module>
         <module>config-server</module>
-        <module>netty4-demo</module>
         <module>demo-service</module>
         <module>ribbon-customer</module>
         <module>rabbitmq-hello-demo</module>
-        <module>netty-server</module>
     </modules>
 
     <parent>

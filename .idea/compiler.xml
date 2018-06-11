@@ -14,8 +14,6 @@
         <module name="demo-service" />
         <module name="demoConfig" />
         <module name="erueka-server" />
-        <module name="netty-server" />
-        <module name="netty4-demo" />
         <module name="rabbitmq-hello-demo" />
         <module name="ribbon-customer" />
         <module name="zuul-server" />

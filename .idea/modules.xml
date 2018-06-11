@@ -8,8 +8,6 @@
       <module fileurl="file://$PROJECT_DIR$/demo-service/demo-service.iml" filepath="$PROJECT_DIR$/demo-service/demo-service.iml" />
       <module fileurl="file://$PROJECT_DIR$/../demoConfig/demoConfig.iml" filepath="$PROJECT_DIR$/../demoConfig/demoConfig.iml" />
       <module fileurl="file://$PROJECT_DIR$/erueka-server/erueka-server.iml" filepath="$PROJECT_DIR$/erueka-server/erueka-server.iml" />
-      <module fileurl="file://$PROJECT_DIR$/netty-server/netty-server.iml" filepath="$PROJECT_DIR$/netty-server/netty-server.iml" />
-      <module fileurl="file://$PROJECT_DIR$/netty4-demo/netty4-demo.iml" filepath="$PROJECT_DIR$/netty4-demo/netty4-demo.iml" />
       <module fileurl="file://$PROJECT_DIR$/rabbitmq-hello-demo/rabbitmq-hello-demo.iml" filepath="$PROJECT_DIR$/rabbitmq-hello-demo/rabbitmq-hello-demo.iml" />
       <module fileurl="file://$PROJECT_DIR$/ribbon-customer/ribbon-customer.iml" filepath="$PROJECT_DIR$/ribbon-customer/ribbon-customer.iml" />
       <module fileurl="file://$PROJECT_DIR$/zuul-server/zuul-server.iml" filepath="$PROJECT_DIR$/zuul-server/zuul-server.iml" />

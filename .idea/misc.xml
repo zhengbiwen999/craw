@@ -9,13 +9,13 @@
         <option value="$PROJECT_DIR$/demo-service/pom.xml" />
         <option value="$PROJECT_DIR$/rabbitmq-hello-demo/pom.xml" />
         <option value="$PROJECT_DIR$/ribbon-customer/pom.xml" />
-        <option value="$PROJECT_DIR$/netty4-demo/pom.xml" />
         <option value="$PROJECT_DIR$/../demoConfig/demoConfig.iml" />
       </list>
     </option>
     <option name="ignoredFiles">
       <set>
         <option value="$PROJECT_DIR$/demo-service2/pom.xml" />
+        <option value="$PROJECT_DIR$/netty-server/pom.xml" />
         <option value="$PROJECT_DIR$/rabbitmq-hello/pom.xml" />
         <option value="$PROJECT_DIR$/test-service/pom.xml" />
       </set>
