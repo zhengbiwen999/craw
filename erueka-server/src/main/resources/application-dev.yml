@@ -1,1 +1,29 @@
+server:
+  port: 6001
 
+config:
+  metricEnable: false
+  metricsPrefix: "winpos.eureka-server"
+  metricsPeriod: 15
+  metricsHost: 127.0.0.1
+  metricsPort: 8125
+  metricsMemFreeRatio: 0.9
+
+eureka:
+  server:
+    enable-self-preservation: false
+    eviction-interval-timer-in-ms: 5000
+  instance:
+    lease-renewal-interval-in-seconds: 5
+  client:
+    register-with-eureka: false
+    fetch-registry: false
+    service-url:
+       defaultZone: http://zbw:123456@localhost:6001/eureka
+
+security:
+  basic:
+    enabled: true
+  user:
+    name: zbw
+    password: 123456

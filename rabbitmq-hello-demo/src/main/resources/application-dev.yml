@@ -1,0 +1,11 @@
+info:
+  app:
+    version: 20180117A
+
+#logging:
+#  config: classpath:log4j2-dev.xml
+
+spring:
+  application:
+#    name: winpos-shop-service${spring.cloud.client.ipAddress}
+    name: rabbit-demo

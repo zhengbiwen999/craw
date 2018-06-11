@@ -11,28 +11,25 @@ spring:
           username: zhengbiwen999
           password: zbw910405
 
-server:
-  port: 6002
-#info:
-#  app:
-#    name: ${spring.application.name}
-#    address: ${spring.cloud.client.ipAddress}:${server.port}
-#    env: ${spring.profiles.active}
-#    version: 20180117A
-#
-eureka:
-  client:
-    service-url:
-      defaultZone: http://zbw:123456@localhost:6001/eureka/
+info:
+  app:
+    name: ${spring.application.name}
+    address: ${spring.cloud.client.ipAddress}:${server.port}
+    env: ${spring.profiles.active}
+    version: 20180117A
 
-#
-#security:
-#  basic:
-#    enabled: false
-#
-#management:
-#  security:
-#    enabled: false
-#  health:
-#    redis:
-#      enabled: false
+eureka:
+  instance:
+    prefer-ip-address: true
+    instance-id: ${spring.cloud.client.ipAddress}:${server.port}
+
+security:
+  basic:
+    enabled: false
+
+management:
+  security:
+    enabled: false
+  health:
+    redis:
+      enabled: false

@@ -1,16 +1,12 @@
-#eureka:
-#  client:
-#    service-url:
-#      defaultZone: http://zbw:123456@localhost:6001/eureka/
-##      register-with-eureka: false
-##      fetch-registry: false
+eureka:
+  instance:
+    prefer-ip-address: true
+  client:
+    service-url:
+      defaultZone: http://zbw:123456@localhost:6001/eureka
 
 spring:
-  profiles:
-    active: dev
   cloud:
     config:
+      profile: dev
       label: dev
-      discovery:
-        service-id: config-server
-        enabled: true

@@ -1,0 +1,12 @@
+spring:
+  application:
+    name: application
+  profiles:
+    active: dev
+  cloud:
+    config:
+      label: dev
+      discovery:
+        enabled: true
+        service-id: config-server
+

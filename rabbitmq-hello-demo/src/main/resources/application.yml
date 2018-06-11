@@ -1,17 +1,9 @@
 server:
   port: 8083
+
 spring:
   application:
-    name: mq-service
-  profiles:
-    active: dev
-  cloud:
-    config:
-      label: dev
-#      discovery:
-#        enabled: true
-      uri: http://localhost:6002/
-      profile: dev
+    name: "rabbit-demo"
   rabbitmq:
     host: 127.0.0.1
     port: 5672
@@ -19,13 +11,40 @@ spring:
     password: guest
 
 eureka:
-  client:
-    service-url:
-      defaultZone: http://zbw:123456@localhost:6001/eureka/
+  instance:
+    prefer-ip-address: true
+    instance-id: ${spring.cloud.client.ipAddress}:${server.port}
+    metadata-map:
+      gated-launch: false
 
-# mac
-# brew update
-# brew install erlang
-# brew install rabbitmq
-# brew services start rabbitmq 启动
-# localhost:15672 / guest guest
+security:
+#  basic:
+#    enabled: true
+#    path: /home/**,/backReason/**
+  user:
+    name: zbw
+    password: 123456
+
+management:
+  security:
+    enabled: false
+  health:
+    redis:
+      enabled: false
+    mail:
+      enabled: false
+    db:
+      enabled: false
+    diskspace:
+      enabled: false
+
+endpoints:
+  shutdown:
+    enabled: true
+  restart:
+    enabled: true
+
+#eureka:
+#  client:
+#    service-url:
+#      defaultZone: http://zbw:123456@localhost:6001/eureka/

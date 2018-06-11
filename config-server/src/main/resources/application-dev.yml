@@ -1,0 +1,15 @@
+server:
+  port: 6002
+
+config:
+  metricEnable: false
+  metricsPrefix: "winpos.config-server"
+  metricsPeriod: 15
+  metricsHost: 127.0.0.1
+  metricsPort: 8125
+  metricsMemFreeRatio: 0.9
+
+eureka:
+  client:
+    service-url:
+      defaultZone: http://zbw:123456@localhost:6001/eureka/

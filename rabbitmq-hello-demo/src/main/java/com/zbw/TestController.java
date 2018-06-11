@@ -13,7 +13,7 @@ public class TestController {
 
     @RequestMapping("/hello")
     public String helloWord(){
-        return "hello word"+valueConfig.getEnv()+"value";
+        return "读取config配置值 ："+valueConfig.getEnv();
     }
 
 }
