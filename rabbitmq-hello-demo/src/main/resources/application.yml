@@ -9,6 +9,21 @@ spring:
     port: 5672
     username: guest
     password: guest
+  datasource:
+    url: ${jdbc.master}
+    username: ${jdbc.username}
+    password: ${jdbc.password}
+    driver-class-name: com.mysql.jdbc.Driver
+  redis:
+    database: 0
+    host: 47.98.123.156
+    password: Zbw123456|
+    port: 6379
+    pool:
+      max-active: 8
+      min-idle: 0
+      max-wait:  -1
+      max-idle: 8
 
 eureka:
   instance:
@@ -44,7 +59,5 @@ endpoints:
   restart:
     enabled: true
 
-#eureka:
-#  client:
-#    service-url:
-#      defaultZone: http://zbw:123456@localhost:6001/eureka/
+mybatis:
+  mapperLocations: classpath:mapper/*.xml

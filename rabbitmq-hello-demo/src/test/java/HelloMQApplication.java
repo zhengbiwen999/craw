@@ -1,5 +1,5 @@
 import com.DemoMQApplication;
-import com.zbw.Sender;
+import com.zbw.rabbitMqDemo.Sender;
 import org.junit.Test;
 import org.junit.runner.RunWith;
 import org.springframework.beans.factory.annotation.Autowired;

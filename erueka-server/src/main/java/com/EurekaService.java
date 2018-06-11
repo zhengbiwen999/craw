@@ -19,17 +19,4 @@ public class EurekaService {
         SpringApplication.run(EurekaService.class,args);
     }
 
-    /**
-     * 配上健康检查
-     * http://blog.springcloud.cn/sc/sc-lx/
-     */
-
-    /**
-     * 定时任务，每隔一分钟打印一次 xxx
-     *  corn 表达式  https://www.jianshu.com/p/f03b1497122a
-     */
-    @Scheduled(cron = "0 */1 * * * ?")
-    public void someTimeTask() {
-        System.out.println("xxx");
-    }
 }

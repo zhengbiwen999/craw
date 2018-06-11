@@ -1,8 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
-  <component name="EntryPointsManager">
-    <entry_points version="2.0" />
-  </component>
   <component name="MavenProjectsManager">
     <option name="originalFiles">
       <list>
@@ -13,7 +10,15 @@
         <option value="$PROJECT_DIR$/rabbitmq-hello-demo/pom.xml" />
         <option value="$PROJECT_DIR$/ribbon-customer/pom.xml" />
         <option value="$PROJECT_DIR$/netty4-demo/pom.xml" />
+        <option value="$PROJECT_DIR$/../demoConfig/demoConfig.iml" />
       </list>
+    </option>
+    <option name="ignoredFiles">
+      <set>
+        <option value="$PROJECT_DIR$/demo-service2/pom.xml" />
+        <option value="$PROJECT_DIR$/rabbitmq-hello/pom.xml" />
+        <option value="$PROJECT_DIR$/test-service/pom.xml" />
+      </set>
     </option>
   </component>
   <component name="ProjectRootManager" version="2" languageLevel="JDK_1_3" project-jdk-name="1.8" project-jdk-type="JavaSDK" />

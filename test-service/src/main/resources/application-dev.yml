@@ -1,5 +1,0 @@
-## 家乡属性 Dev
-home:
-  province: ZheJiang
-  city: WenLing
-  desc: I'm living in ${home.province} ${home.city}

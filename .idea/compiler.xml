@@ -12,14 +12,12 @@
         <module name="craw-erueka" />
         <module name="craw-zuul" />
         <module name="demo-service" />
-        <module name="demo-service2" />
+        <module name="demoConfig" />
         <module name="erueka-server" />
         <module name="netty-server" />
         <module name="netty4-demo" />
-        <module name="rabbitmq-hello" />
         <module name="rabbitmq-hello-demo" />
         <module name="ribbon-customer" />
-        <module name="test-service" />
         <module name="zuul-server" />
       </profile>
     </annotationProcessing>
@@ -32,6 +30,7 @@
       <module name="craw-zuul" target="1.8" />
       <module name="demo-service" target="1.8" />
       <module name="demo-service2" target="1.8" />
+      <module name="demoConfig" target="1.5" />
       <module name="erueka-server" target="1.8" />
       <module name="netty-server" target="1.8" />
       <module name="netty4-demo" target="1.5" />

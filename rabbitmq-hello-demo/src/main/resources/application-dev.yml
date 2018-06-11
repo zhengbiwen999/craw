@@ -9,3 +9,8 @@ spring:
   application:
 #    name: winpos-shop-service${spring.cloud.client.ipAddress}
     name: rabbit-demo
+
+home:
+  province: ZheJiang
+  city: WenLing
+  desc: I'm living in ${home.province} ${home.city}
