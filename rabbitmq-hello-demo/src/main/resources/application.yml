@@ -1,5 +1,5 @@
 server:
-  port: 8083
+  port: ${server.port}
 
 spring:
   application:
@@ -15,15 +15,18 @@ spring:
     password: ${jdbc.password}
     driver-class-name: com.mysql.jdbc.Driver
   redis:
-    database: 0
-    host: 47.98.123.156
-    password: Zbw123456|
-    port: 6379
+    database: ${redis.database}
+    host: ${redis.host}
+    password: ${redis.password}
+    port: ${redis.port}
     pool:
-      max-active: 8
-      min-idle: 0
-      max-wait:  -1
-      max-idle: 8
+      max-active: ${redis.pool.max-active}
+      min-idle: ${redis.pool.min-idle}
+      max-wait:  ${redis.pool.max-wait}
+      max-idle: ${redis.pool.max-idle}
+#    sentinel:
+#      master: ${redis.sentinel.master}
+#      nodes: ${redis.sentinel.nodes}
 
 eureka:
   instance:
