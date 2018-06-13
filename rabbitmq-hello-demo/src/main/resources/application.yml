@@ -5,10 +5,10 @@ spring:
   application:
     name: "rabbit-demo"
   rabbitmq:
-    host: 127.0.0.1
+    host: 47.98.123.156
     port: 5672
-    username: guest
-    password: guest
+    username: test
+    password: test
   datasource:
     url: ${jdbc.master}
     username: ${jdbc.username}

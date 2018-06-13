@@ -8,7 +8,7 @@ import org.springframework.web.bind.annotation.RestController;
 @RestController
 public class TestController {
 
-    //https://www.linuxidc.com/Linux/2017-05/143765.html
+    //https://www.linuxidc.com/Linux/2017-05/143765.htm
 
     @Autowired
     private Sender sender;
