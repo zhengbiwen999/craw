@@ -21,8 +21,8 @@
         <java.version>1.8</java.version>
         <spring-boot-starter-redis-version>1.4.3.RELEASE</spring-boot-starter-redis-version>
         <mybatis-spring-boot>1.2.0</mybatis-spring-boot>
-        <mysql-connector>5.1.39</mysql-connector>
-        <druid>1.0.18</druid>
+        <mysql-connector>6.0.5</mysql-connector>
+        <druid>1.1.2</druid>
     </properties>
 
     <dependencies>
