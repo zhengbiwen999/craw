@@ -1,6 +1,29 @@
 server:
   port: ${server.port}
 
+druid:
+    type: com.alibaba.druid.pool.DruidDataSource
+    winpos:
+      master: #winpos主库
+        url: ${jdbc.master}
+        driver-class-name: com.mysql.cj.jdbc.Driver
+        username: ${jdbc.username}
+        password: ${jdbc.password}
+        initial-size: ${jdbc.initSize}
+        min-idle: ${jdbc.minIdle}
+        max-active: ${jdbc.maxActive}
+        test-on-borrow: ${jdbc.testOnBorrow}
+      slave: #winpos从库
+        url: ${jdbc.slave}
+        driver-class-name: com.mysql.cj.jdbc.Driver
+        username: ${jdbc.username}
+        password: ${jdbc.password}
+        initial-size: ${jdbc.initSize}
+        min-idle: ${jdbc.minIdle}
+        max-active: ${jdbc.maxActive}
+        test-on-borrow: ${jdbc.testOnBorrow}
+
+
 spring:
   application:
     name: "rabbit-demo"
@@ -9,11 +32,11 @@ spring:
     port: 5672
     username: test
     password: test
-  datasource:
-    url: ${jdbc.master}
-    username: ${jdbc.username}
-    password: ${jdbc.password}
-    driver-class-name: com.mysql.jdbc.Driver
+#  datasource:
+#    url: ${jdbc.master}
+#    username: ${jdbc.username}
+#    password: ${jdbc.password}
+#    driver-class-name:
   redis:
     database: ${redis.database}
     host: ${redis.host}

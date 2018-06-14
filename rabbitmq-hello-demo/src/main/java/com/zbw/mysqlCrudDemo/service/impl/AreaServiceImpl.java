@@ -1,5 +1,7 @@
 package com.zbw.mysqlCrudDemo.service.impl;
 
+import com.springboot.common.annotation.Master;
+import com.springboot.common.annotation.Slave;
 import com.zbw.mysqlCrudDemo.dao.AreaDao;
 import com.zbw.mysqlCrudDemo.domain.AreaEntity;
 import com.zbw.mysqlCrudDemo.domain.Student;
@@ -16,11 +18,13 @@ public class AreaServiceImpl implements AreaService {
     private AreaDao areaDao;
 
     @Override
+    @Slave
     public List<AreaEntity> getAllArea() {
         return areaDao.getAllArea();
     }
 
     @Override
+    @Master
     public int bashInsert(List<Student> list) {
         return areaDao.bashInsert(list);
     }
