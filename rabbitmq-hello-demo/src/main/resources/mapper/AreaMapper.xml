@@ -24,4 +24,10 @@
 		</foreach>
 	</insert>
 
+	<insert id="insertEntity" useGeneratedKeys="false">
+		insert into tbarea
+		values (#{cityId},#{districtId},#{districtName},#{areaSort});
+	</insert>
+
+
 </mapper>

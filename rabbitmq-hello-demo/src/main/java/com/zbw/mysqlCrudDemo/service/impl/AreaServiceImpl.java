@@ -23,6 +23,14 @@ public class AreaServiceImpl implements AreaService {
         return areaDao.getAllArea();
     }
 
+
+    @Override
+    @Master
+    public int insertEntity(AreaEntity entity) {
+        return areaDao.insertEntity(entity);
+    }
+
+
     @Override
     @Master
     public int bashInsert(List<Student> list) {

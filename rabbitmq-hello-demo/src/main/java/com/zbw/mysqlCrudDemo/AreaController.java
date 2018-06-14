@@ -7,8 +7,8 @@ import com.zbw.mysqlCrudDemo.domain.Student;
 import com.zbw.mysqlCrudDemo.service.AreaService;
 import org.apache.log4j.Logger;
 import org.springframework.beans.factory.annotation.Autowired;
-import org.springframework.web.bind.annotation.RequestMapping;
-import org.springframework.web.bind.annotation.RestController;
+import org.springframework.web.bind.annotation.*;
+
 import java.util.ArrayList;
 import java.util.List;
 import java.util.regex.Matcher;
@@ -36,6 +36,13 @@ public class AreaController {
     public List<AreaEntity> getAllAreas(){
         return areaService.getAllArea();
     }
+
+    @PostMapping(value = "/insert")
+    public int insertEntity(@RequestBody AreaEntity entity){
+        return areaService.insertEntity(entity);
+    }
+
+
 
     @RequestMapping("/insertOne")
     public int insert(){

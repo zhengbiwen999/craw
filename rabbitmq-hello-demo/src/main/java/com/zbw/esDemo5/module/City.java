@@ -7,7 +7,7 @@ import java.io.Serializable;
 
 
 @Data
-@Document(indexName = "zbw",type = "city")
+@Document(indexName = "elasticsearch",type = "city")
 public class City implements Serializable{
 
     private static final long serialVersionUID = 7353891786833787224L;

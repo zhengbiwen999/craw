@@ -43,6 +43,10 @@ public class multThreadsPollDemo {
             Thread.sleep(1);
             sum += i;
         }
+
+
+        Random r = new Random(54);
+
         return sum;
     }
 
@@ -159,4 +163,13 @@ public class multThreadsPollDemo {
         }).forEach(System.out::println);
     }
 
+@Test
+    public void main() {
+//        int max=54;
+//        int min=0;
+        Random random = new Random();
+
+        int s = random.nextInt(54)+1;
+        System.out.println(s);
+    }
 }

@@ -13,4 +13,6 @@ public interface AreaDao extends Mapper, MySqlMapper {
 
     int bashInsert(List<Student> list);
 
+    int insertEntity(AreaEntity entity);
+
 }

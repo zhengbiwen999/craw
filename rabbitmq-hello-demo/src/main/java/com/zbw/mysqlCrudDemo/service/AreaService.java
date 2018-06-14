@@ -11,4 +11,5 @@ public interface AreaService {
 
     int bashInsert(List<Student> list);
 
+    int insertEntity(AreaEntity entity);
 }

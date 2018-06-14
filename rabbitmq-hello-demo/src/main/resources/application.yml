@@ -5,23 +5,23 @@ druid:
   type: com.alibaba.druid.pool.DruidDataSource
   winpos:
     master: #winpos主库
-      url: ${jdbc.master}
+      url: jdbc:mysql://127.0.0.1:3306/zbw
       driver-class-name: com.mysql.cj.jdbc.Driver
-      username: ${jdbc.username}
-      password: ${jdbc.password}
-      initial-size: ${jdbc.initSize}
-      min-idle: ${jdbc.minIdle}
-      max-active: ${jdbc.maxActive}
-      test-on-borrow: ${jdbc.testOnBorrow}
+      username: root
+      password: zbw
+#      initial-size: 5
+#      min-idle: ${jdbc.minIdle}
+#      max-active: ${jdbc.maxActive}
+#      test-on-borrow: ${jdbc.testOnBorrow}
     slave: #winpos从库
-      url: ${jdbc.slave}
+      url: jdbc:mysql://47.98.123.156:3306/test
       driver-class-name: com.mysql.cj.jdbc.Driver
-      username: ${jdbc.username}
-      password: ${jdbc.password}
-      initial-size: ${jdbc.initSize}
-      min-idle: ${jdbc.minIdle}
-      max-active: ${jdbc.maxActive}
-      test-on-borrow: ${jdbc.testOnBorrow}
+      username: root
+      password: Zbw123456|
+#      initial-size: ${jdbc.initSize}
+#      min-idle: ${jdbc.minIdle}
+#      max-active: ${jdbc.maxActive}
+#      test-on-borrow: ${jdbc.testOnBorrow}
 
 
 spring:

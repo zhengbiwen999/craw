@@ -17,8 +17,8 @@ spring:
 # https://www.bysocket.com/?p=1997
   data:
     elasticsearch:
-      cluster-name: zbw
-      cluster-nodes: 47.98.123.156:9200
+      cluster-name: elasticsearch
+      cluster-nodes: 47.98.123.156:9300
       repositories:
         enabled: true
 
