@@ -13,6 +13,7 @@
         <option value="$PROJECT_DIR$/rabbitmq-hello-demo/pom.xml" />
         <option value="$PROJECT_DIR$/ribbon-customer/pom.xml" />
         <option value="$PROJECT_DIR$/../demoConfig/demoConfig.iml" />
+        <option value="$PROJECT_DIR$/desgin-demo/pom.xml" />
       </list>
     </option>
     <option name="ignoredFiles">

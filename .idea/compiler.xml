@@ -28,6 +28,7 @@
         <module name="craw-erueka" />
         <module name="craw-zuul" />
         <module name="demo-service" />
+        <module name="desgin-demo" />
         <module name="erueka-server" />
         <module name="rabbitmq-hello-demo" />
         <module name="ribbon-customer" />
@@ -44,6 +45,7 @@
       <module name="demo-service" target="1.8" />
       <module name="demo-service2" target="1.8" />
       <module name="demoConfig" target="1.5" />
+      <module name="desgin-demo" target="1.5" />
       <module name="erueka-server" target="1.8" />
       <module name="netty-server" target="1.8" />
       <module name="netty4-demo" target="1.5" />
