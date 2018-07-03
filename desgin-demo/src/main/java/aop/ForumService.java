@@ -1,5 +1,6 @@
 package aop;
 
+
 public interface ForumService {
 
      void removeTopic(int topicId) throws InterruptedException;

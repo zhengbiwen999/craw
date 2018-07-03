@@ -1,7 +1,10 @@
 package aop;
 
+import aop.annotation.NeedTest;
+
 public class ForumServiceImpl implements ForumService {
 
+    @NeedTest(value = true)
     public void removeTopic(int topicId) throws InterruptedException {
         //PerformanceMonitor.begin("aop.ForumServiceImpl.removeTopic");
 
@@ -13,6 +16,7 @@ public class ForumServiceImpl implements ForumService {
         //PerformanceMonitor.end();
     }
 
+    @NeedTest(value = false)
     public void removeForm(int forumId) throws InterruptedException {
        //PerformanceMonitor.begin("aop.ForumServiceImpl.removeForm");
 

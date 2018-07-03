@@ -6,7 +6,7 @@ import org.junit.Test;
 
 import java.lang.reflect.Proxy;
 
-public class ForumServiceProxyTest {
+public class ForumTestServiceProxyTest {
 
     @Test
     public void proxy() throws InterruptedException {

@@ -2,7 +2,7 @@ package aop;
 
 import org.junit.Test;
 
-public class TestForumService {
+public class TestForumTestService {
 
     @Test
     public void test1() throws InterruptedException {
