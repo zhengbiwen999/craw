@@ -17,6 +17,9 @@ public class RetryServiceImpl implements RetryService {
         throw new RuntimeException("exception");
     }
 
+    /**
+     * 所有的重试失败后，调用此方法
+     */
     @Recover
     public void recover(RuntimeException e) {
         System.out.printf("尽力了。。。。");
