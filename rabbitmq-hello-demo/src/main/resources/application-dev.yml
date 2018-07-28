@@ -14,3 +14,6 @@ home:
   province: ZheJiang
   city: WenLing
   desc: I'm living in ${home.province} ${home.city}
+
+logging:
+  config: classpath:logback.xml
