@@ -1,0 +1,34 @@
+server:
+  port: 8085
+
+spring:
+  application:
+    name: "log-demo"
+eureka:
+  instance:
+    prefer-ip-address: true
+    instance-id: ${spring.cloud.client.ipAddress}:8085
+    metadata-map:
+      gated-launch: false
+
+security:
+  user:
+    name: zbw
+    password: 123456
+
+management:
+  security:
+    enabled: false
+  health:
+    redis:
+      enabled: false
+    mail:
+      enabled: false
+    diskspace:
+      enabled: false
+
+endpoints:
+  shutdown:
+    enabled: true
+  restart:
+    enabled: true

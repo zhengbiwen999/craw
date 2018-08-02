@@ -1,0 +1,12 @@
+info:
+  app:
+    version: 20180117A
+
+spring:
+  application:
+    name: log-demo
+
+home:
+  province: ZheJiang
+  city: WenLing
+  desc: I'm living in ${home.province} ${home.city}

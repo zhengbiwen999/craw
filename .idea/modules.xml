@@ -9,8 +9,10 @@
       <module fileurl="file://$PROJECT_DIR$/zuul-server/craw-zuul.iml" filepath="$PROJECT_DIR$/zuul-server/craw-zuul.iml" />
       <module fileurl="file://$PROJECT_DIR$/demo-service/demo-service.iml" filepath="$PROJECT_DIR$/demo-service/demo-service.iml" />
       <module fileurl="file://$PROJECT_DIR$/desgin-demo/desgin-demo.iml" filepath="$PROJECT_DIR$/desgin-demo/desgin-demo.iml" />
+      <module fileurl="file://$PROJECT_DIR$/log-demo/log-demo.iml" filepath="$PROJECT_DIR$/log-demo/log-demo.iml" />
       <module fileurl="file://$PROJECT_DIR$/rabbitmq-hello-demo/rabbitmq-hello-demo.iml" filepath="$PROJECT_DIR$/rabbitmq-hello-demo/rabbitmq-hello-demo.iml" />
       <module fileurl="file://$PROJECT_DIR$/ribbon-customer/ribbon-customer.iml" filepath="$PROJECT_DIR$/ribbon-customer/ribbon-customer.iml" />
+      <module fileurl="file://$PROJECT_DIR$/shard-service/shard-service.iml" filepath="$PROJECT_DIR$/shard-service/shard-service.iml" />
     </modules>
   </component>
 </project>

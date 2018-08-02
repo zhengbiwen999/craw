@@ -16,6 +16,8 @@
         <module>demo-service</module>
         <module>ribbon-customer</module>
         <module>rabbitmq-hello-demo</module>
+        <module>log-demo</module>
+        <module>shard-service</module>
     </modules>
 
     <parent>

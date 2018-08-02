@@ -8,7 +8,6 @@
 ***/
 package com.zbw.lockLearn.PhiosopherTimeout;
 
-import org.junit.Test;
 
 import java.util.concurrent.locks.ReentrantLock;
 

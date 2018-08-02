@@ -14,8 +14,10 @@
         <module name="demo-service" />
         <module name="desgin-demo" />
         <module name="erueka-server" />
+        <module name="log-demo" />
         <module name="rabbitmq-hello-demo" />
         <module name="ribbon-customer" />
+        <module name="shard-service" />
         <module name="zuul-server" />
       </profile>
     </annotationProcessing>
@@ -31,11 +33,13 @@
       <module name="demoConfig" target="1.5" />
       <module name="desgin-demo" target="8" />
       <module name="erueka-server" target="1.8" />
+      <module name="log-demo" target="1.8" />
       <module name="netty-server" target="1.8" />
       <module name="netty4-demo" target="1.5" />
       <module name="rabbitmq-hello" target="1.8" />
       <module name="rabbitmq-hello-demo" target="1.8" />
       <module name="ribbon-customer" target="1.8" />
+      <module name="shard-service" target="1.8" />
       <module name="test-service" target="1.8" />
       <module name="zuul-server" target="1.8" />
     </bytecodeTargetLevel>
